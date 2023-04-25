@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adv_basics/start_quiz.dart';
-import 'package:adv_basics/questions.dart';
+import 'package:adv_basics/questions_screen.dart';
 
 class Quiz extends StatefulWidget {
   const Quiz({super.key});
@@ -48,7 +48,7 @@ class _QuizState extends State<Quiz> {
           child: Center(
             child: activeScreen == 'start-quiz'
                 ? StartQuiz(switchScreen)
-                : const Questions(),
+                : const QuestionsScreen(),
             // child: activeScreen,
           ),
         ),
